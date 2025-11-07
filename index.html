@@ -13,11 +13,10 @@
         }
         
         /* 選択中のボタンスタイル (通常のCSS) */
-        /* ★★★ 修正点 ★★★ */
-        /* わかりにくいので、選択中は背景色自体を黄色に変更 */
         .track-button.selected {
-            background-color: #D3C34A; /* 黄色 */
-            border: 4px solid #1B2A5C; /* 濃い青の枠線 */
+            /* ★修正★ 背景色自体を黄色に変更 */
+            background-color: #D3C34A !important; /* 黄色 */
+            border: 4px solid #fde68a; /* ring-yellow-200 の代わり */
         }
     </style>
 </head>
@@ -62,6 +61,11 @@
 
         <!-- ステータス表示 (明るいグレー) -->
         <div id="status" class="text-center text-gray-300 mt-4 h-6"></div>
+
+        <!-- ★コピーライト追加★ -->
+        <footer class="text-center text-gray-400 text-sm mt-6">
+            ©︎ 探究学舎
+        </footer>
     </div>
 
     <script>
@@ -77,14 +81,15 @@
             "トランペット", "トロンボーン", "ホルン", "チューバ"
         ];
         
-        // ▼ 楽器アイコンのファイル名 (12種類) - ユーザー指定のSVGに更新 ▼
+        // ▼ 楽器アイコンのファイル名 (12種類) ▼
+        // ! GitHubに index.html と同じ場所に、この名前の画像ファイルをアップロードしてください。
         const TRACK_ICONS = [
             "tanq_music_Vio.svg", "tanq_music_Via.svg", "tanq_music_Cel.svg", "tanq_music_StB.svg",
             "tanq_music_Cl.svg", "tanq_music_Fl.svg", "tanq_music_Ob.svg", "tanq_music_Fg.svg",
             "tanq_music_Tp.svg", "tanq_music_Tb.svg", "tanq_music_Hr.svg", "tuba.svg"
         ];
 
-        // ▼ 音源ファイル名 (12種類) - ユーザー指定のMP3に更新 ▼
+        // ▼ 音源ファイル名 (12種類) - .mp3 形式 ▼
         const TRACK_URLS = [
             "wide_25-11_music_2-15a_orchestra_Violin.mp3", // ヴァイオリン
             "wide_25-11_music_2-15b_orchestra_Viola.mp3", // ヴィオラ
@@ -127,9 +132,9 @@
                 const button = clone.querySelector('.track-button');
                 
                 // ★アイコン(画像)を設定★
-                // ★★★ 修正点 ★★★
-                // ★サイズを h-18 w-18 (72px) に変更★
+                // 画像が見つからない時は名前の先頭4文字を表示するフォールバック処理を追加
                 const altText = TRACK_NAMES[index] ? TRACK_NAMES[index].substring(0, 4) : '...';
+                // ★アイコンサイズ修正 (h-18 w-18 = 72px)★
                 button.innerHTML = `<img src="${TRACK_ICONS[index]}" alt="${TRACK_NAMES[index]}" class="h-18 w-18 object-contain" onerror="this.style.display='none'; this.parentElement.innerHTML='${altText}'">`;
                 
                 button.dataset.index = index; 
@@ -150,13 +155,12 @@
         // トラック選択処理 (トグル)
         function toggleTrackSelection(index) {
             // console.log(`Toggle track ${index}`);
-            // ★この処理は即座に実行されます★
             if (selectedIndices.has(index)) {
                 selectedIndices.delete(index);
-                trackButtons[index].classList.remove('selected'); // すぐに色を戻す
+                trackButtons[index].classList.remove('selected');
             } else {
                 selectedIndices.add(index);
-                trackButtons[index].classList.add('selected'); // すぐに色を変える (黄色に)
+                trackButtons[index].classList.add('selected');
             }
             updateStatusText();
         }
@@ -173,7 +177,7 @@
         // --- 再生ロジック ---
 
         playButton.addEventListener('click', playSelected);
-        stopButton.addEventListener('click', stopAllAudio);
+        stopButton.addEventListener('click', () => stopAllAudio(true)); // updateStatus = true
 
         // 「さいせい」ボタン
         function playSelected() {
