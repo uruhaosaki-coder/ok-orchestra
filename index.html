@@ -13,10 +13,11 @@
         }
         
         /* 選択中のボタンスタイル (通常のCSS) */
+        /* ★★★ 修正点 ★★★ */
+        /* わかりにくいので、選択中は背景色自体を黄色に変更 */
         .track-button.selected {
-            /* アイコン版では、枠線を黄色にする */
-            border: 4px solid #D3C34A; /* 黄色 */
-            background-color: #e0e7ff; /* 少し濃い白 (indigo-50) */
+            background-color: #D3C34A; /* 黄色 */
+            border: 4px solid #1B2A5C; /* 濃い青の枠線 */
         }
     </style>
 </head>
@@ -35,6 +36,7 @@
         <div id="button-container" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-4 w-full">
             <template id="track-button-template">
                 <!-- Trackボタン: 白背景(bg-white)。文字スタイルを削除し、画像用のスタイル(flex)を追加 -->
+                <!-- aspect-square でボタンを正方形に保つ -->
                 <button class="track-button font-bold py-3 px-2 rounded-lg bg-white hover:bg-gray-100 transition-all duration-200 shadow-md border-4 border-transparent flex items-center justify-center aspect-square">
                     <!-- この中身(innerHTML)はJavaScriptによって <img ...> に置き換えられます -->
                 </button>
@@ -75,15 +77,14 @@
             "トランペット", "トロンボーン", "ホルン", "チューバ"
         ];
         
-        // ▼ 楽器アイコンのファイル名 (12種類) ▼
-        // ! GitHubに index.html と同じ場所に、この名前の画像ファイルをアップロードしてください。
+        // ▼ 楽器アイコンのファイル名 (12種類) - ユーザー指定のSVGに更新 ▼
         const TRACK_ICONS = [
             "tanq_music_Vio.svg", "tanq_music_Via.svg", "tanq_music_Cel.svg", "tanq_music_StB.svg",
             "tanq_music_Cl.svg", "tanq_music_Fl.svg", "tanq_music_Ob.svg", "tanq_music_Fg.svg",
             "tanq_music_Tp.svg", "tanq_music_Tb.svg", "tanq_music_Hr.svg", "tuba.svg"
         ];
 
-        // ▼ 音源ファイル名 (12種類) - .mp3 形式 ▼
+        // ▼ 音源ファイル名 (12種類) - ユーザー指定のMP3に更新 ▼
         const TRACK_URLS = [
             "wide_25-11_music_2-15a_orchestra_Violin.mp3", // ヴァイオリン
             "wide_25-11_music_2-15b_orchestra_Viola.mp3", // ヴィオラ
@@ -126,9 +127,10 @@
                 const button = clone.querySelector('.track-button');
                 
                 // ★アイコン(画像)を設定★
-                // 画像が見つからない時は名前の先頭4文字を表示するフォールバック処理を追加
+                // ★★★ 修正点 ★★★
+                // ★サイズを h-18 w-18 (72px) に変更★
                 const altText = TRACK_NAMES[index] ? TRACK_NAMES[index].substring(0, 4) : '...';
-                button.innerHTML = `<img src="${TRACK_ICONS[index]}" alt="${TRACK_NAMES[index]}" class="h-20 w-20 object-contain" onerror="this.style.display='none'; this.parentElement.innerHTML='${altText}'">`;
+                button.innerHTML = `<img src="${TRACK_ICONS[index]}" alt="${TRACK_NAMES[index]}" class="h-18 w-18 object-contain" onerror="this.style.display='none'; this.parentElement.innerHTML='${altText}'">`;
                 
                 button.dataset.index = index; 
 
@@ -148,12 +150,13 @@
         // トラック選択処理 (トグル)
         function toggleTrackSelection(index) {
             // console.log(`Toggle track ${index}`);
+            // ★この処理は即座に実行されます★
             if (selectedIndices.has(index)) {
                 selectedIndices.delete(index);
-                trackButtons[index].classList.remove('selected');
+                trackButtons[index].classList.remove('selected'); // すぐに色を戻す
             } else {
                 selectedIndices.add(index);
-                trackButtons[index].classList.add('selected');
+                trackButtons[index].classList.add('selected'); // すぐに色を変える (黄色に)
             }
             updateStatusText();
         }
