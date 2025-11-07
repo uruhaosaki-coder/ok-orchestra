@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="ja"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- タイトルもひらがな版に変更 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;①まずは がっき を えらんでみよう！&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: "Inter", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* 選択中のボタンスタイル (通常のCSS) */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-button.selected {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #D3C34A; /* 黄色 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #1B2A5C;<span class="Apple-converted-space">            </span>/* 濃い青文字 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 4px solid #fde68a; /* ring-yellow-200 の代わり */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-right: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* ボタンの文字サイズを自動調整 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.track-button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* 1行で表示し、はみ出たら ... に */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>white-space: nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-overflow: ellipsis;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>/* 文字サイズを少し小さくして長い曲名に対応 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.8rem; /* 14px -&gt; 12.8px */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.2;<span class="Apple-converted-space">  </span>/* 縦方向の中央揃えを改善 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;!-- 背景を #717071 (グレー) に変更 --&gt;</p>
+<p class="p1">&lt;body class="bg-[#717071] flex items-center justify-center min-h-screen p-4"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- カードの背景色を #1B2A5C (濃い青) に変更 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w-full max-w-3xl bg-[#1B2A5C] rounded-lg shadow-xl p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 1. タイトルを「①まずは がっき を えらんでみよう！」に変更 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ★フォントサイズを text-2xl から text-xl に変更★ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 class="text-xl font-bold text-center text-[#D3C34A] mb-6"&gt;①まずは がっき を えらんでみよう！&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- トラック選択ボタン (12個用にレイアウト変更) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="button-container" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mb-6 w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;template id="track-button-template"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Trackボタン: 白背景(bg-white)、青文字(text-[#1B2A5C]) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="track-button text-[#1B2A5C] font-bold py-4 px-2 rounded-lg bg-white hover:bg-gray-100 transition-all duration-200 shadow-md border-4 border-transparent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>(Instrument)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/template&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 2. 案内文をボタンの下に追加 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-xl font-bold text-center text-[#D3C34A] mb-6"&gt;②さいせいボタン を おして、きいてみよう！&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 操作ボタン --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex space-x-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 3. ボタンの文字を「さいせい」に変更 &amp; 色を #9AB700 に変更 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="play-button" class="flex-1 bg-[#9AB700] hover:bg-[#82a000] text-white font-bold py-4 px-6 rounded-lg text-lg shadow-lg transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>さいせい</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 4. ボタンの文字を「とめる」に変更 &amp; 色を #AC220D に変更 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="stop-button" class="flex-1 bg-[#AC220D] hover:bg-[#8A1C0A] text-white font-bold py-4 px-6 rounded-lg text-lg shadow-lg transition duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>とめる</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- ステータス表示 (明るいグレー) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="status" class="text-center text-gray-300 mt-4 h-6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- ▼ 音源設定 (プレビュー確認用・オーケストラ版) ▼ ---</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// ▼ 楽器名 (12種類) ▼</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const TRACK_NAMES = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"ヴァイオリン", "ヴィオラ", "チェロ", "コントラバス",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"クラリネット", "フルート", "オーボエ", "ファゴット",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"トランペット", "トロンボーン", "ホルン", "チューバ"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// ▼ 音源URL (12種類) ▼</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const TRACK_URLS = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15a_orchestra_Violin.mp3", // ヴァイオリン</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15b_orchestra_Viola.mp3", // ヴィオラ</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15c_orchestra_Cello.mp3", // チェロ</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15d_orchestra_Contrabass.mp3", // コントラバス</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15e_orchestra_Clarinet.mp3", // クラリネット</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15f_orchestra_Flute.mp3", // フルート</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15g_orchestra_Oboe.mp3", // オーボエ</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15h_orchestra_Fagot.mp3", // ファゴット</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15i_orchestra_Trumpet.mp3", // トランペット</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15j_orchestra_Trombone.mp3", // トロンボーン</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15k_orchestra_Horn.mp3", // ホルン</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"wide_25-11_music_2-15l_orchestra_Tuba.mp3"<span class="Apple-converted-space">  </span>// チューバ</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- ▲ 音源設定 ▲ ---</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Audioオブジェクトのプール (12個 + 予備)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const audioPlayers = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const MAX_PLAYERS = 15; // 12個以上</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (let i = 0; i &lt; MAX_PLAYERS; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>audioPlayers.push(new Audio());</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let playerIndex = 0; // 次に使うAudioオブジェクトのインデックス</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentPlayingPlayers = []; // 現在再生中のプレイヤーの参照</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// DOM要素</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const buttonContainer = document.getElementById('button-container');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const playButton = document.getElementById('play-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const stopButton = document.getElementById('stop-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const statusEl = document.getElementById('status');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const template = document.getElementById('track-button-template');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let selectedIndices = new Set(); // 選択中のトラック (Setで管理)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let trackButtons = []; // ボタンの参照を保持する配列</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- 初期化 ---</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (template &amp;&amp; buttonContainer) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// トラックボタンを生成</p>
+<p class="p1"><span class="Apple-converted-space">            </span>TRACK_NAMES.forEach((name, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const clone = template.content.cloneNode(true);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const button = clone.querySelector('.track-button');</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>button.textContent = name;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>button.dataset.index = index;<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>button.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// トラックボタンクリックで選択/選択解除</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>toggleTrackSelection(index);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>buttonContainer.appendChild(clone);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>trackButtons.push(button);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>console.error("初期化エラー: button-container または track-button-template が見つかりません。");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>statusEl.textContent = "ボタンの初期化に失敗しました";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// トラック選択/選択解除のロジック (トグル)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleTrackSelection(index) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (selectedIndices.has(index)) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>selectedIndices.delete(index);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>selectedIndices.add(index);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// ボタンの選択状態（色）を更新</p>
+<p class="p1"><span class="Apple-converted-space">            </span>trackButtons[index].classList.toggle('selected', selectedIndices.has(index));</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 選択中の楽器数を表示</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (selectedIndices.size &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>statusEl.textContent = `${selectedIndices.size} こ の がっき を えらんでいます`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>statusEl.textContent = "がっき を えらんでください";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- 再生ロジック ---</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>playButton.addEventListener('click', playSelected);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>stopButton.addEventListener('click', stopAllAudio);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 「再生」ボタン (同時再生) のロジック</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function playSelected() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>stopAllAudio(); // まずすべての音を止める</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const indicesToPlay = Array.from(selectedIndices);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (indicesToPlay.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>statusEl.textContent = "さいせい する がっき が えらばれていません";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>statusEl.textContent = `${indicesToPlay.length} こ の がっき を さいせい中...`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>console.log(`Playing ${indicesToPlay.length} tracks simultaneously.`);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// ▼ 音量調整ロジック ▼</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 選択数が増えるほど、各音量を下げる</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// 1個: 1.0, 2個: 0.8, 3個: 0.7, 4個: 0.6, 5個以上: 0.5</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let volume = 1.0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const count = indicesToPlay.length;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (count === 2) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>volume = 0.8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else if (count === 3) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>volume = 0.7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else if (count === 4) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>volume = 0.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else if (count &gt;= 5) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>volume = 0.5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// ▲ 音量調整ロジック ▲</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>indicesToPlay.forEach(index =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const url = TRACK_URLS[index];</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// オーディオプレイヤーをプールから取得</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const player = audioPlayers[playerIndex];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>playerIndex = (playerIndex + 1) % MAX_PLAYERS; // 次のプレイヤーのインデックス</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>player.src = url;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>player.volume = volume; // 調整した音量を設定</p>
+<p class="p1"><span class="Apple-converted-space">                </span>player.currentTime = 0; // 念のためリセット</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// 再生が終わったらリストから除く（エラーハンドリングも兼ねる）</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const onPlayEnd = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>player.removeEventListener('ended', onPlayEnd);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>player.removeEventListener('error', onPlayEnd);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// 再生中リストから削除</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>currentPlayingPlayers = currentPlayingPlayers.filter(p =&gt; p !== player);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// すべての再生が終わったらステータスを更新</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (currentPlayingPlayers.length === 0 &amp;&amp; !player.paused) {</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>statusEl.textContent = "さいせい しゅうりょう";</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>};</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>player.addEventListener('ended', onPlayEnd);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>player.addEventListener('error', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>console.error(`Playback error (${TRACK_NAMES[index]}):`, e.message);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>onPlayEnd(); // エラーでもリストから除く</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>player.play().catch(e =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>console.error(`Playback error (${TRACK_NAMES[index]}):`, e.message);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>statusEl.textContent = `さいせいエラー (${TRACK_NAMES[index]})`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentPlayingPlayers.push(player); // 再生中リストに追加</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 停止ボタン（すべて停止）のロジック</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function stopAllAudio() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>console.log("Stopping all audio...");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>audioPlayers.forEach(player =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (player) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>player.pause();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>player.currentTime = 0;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// イベントリスナーは再生時に都度設定するので、ここでは解除不要</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentPlayingPlayers = []; // 再生中リストをクリア</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// ▼ メッセージを「とめました」に変更 ▼</p>
+<p class="p1"><span class="Apple-converted-space">            </span>statusEl.textContent = "とめました";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 初期ステータスメッセージ</p>
+<p class="p1"><span class="Apple-converted-space">        </span>statusEl.textContent = "がっき を えらんでください";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
